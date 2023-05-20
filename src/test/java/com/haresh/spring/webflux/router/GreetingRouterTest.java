@@ -32,7 +32,7 @@ public class GreetingRouterTest {
                 // and use the dedicated DSL to test assertions against the response
                 .expectStatus().isOk()
                 .expectBody(Greeting.class).value(greeting -> {
-                    Assertions.assertThat(greeting.getMessage()).isEqualTo("Hello, Spring!");
+                    Assertions.assertThat(greeting.getMessage()).isEqualTo("Hello Reactive World!");
                 });
     }
 
